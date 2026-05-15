@@ -824,6 +824,25 @@ function detailUrl(id) {
   return `program-detail.html?id=${encodeURIComponent(id)}`;
 }
 
+function routeDateValue(route) {
+  const match = route.id.match(/^\d{4}-\d{2}-\d{2}/);
+  return match ? match[0] : "";
+}
+
+function todayRouteId() {
+  const today = new Date();
+  const localDate = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, "0"),
+    String(today.getDate()).padStart(2, "0")
+  ].join("-");
+  return (
+    routes.find((route) => routeDateValue(route) === localDate) ||
+    routes.find((route) => routeDateValue(route) > localDate) ||
+    routes[routes.length - 1]
+  ).id;
+}
+
 function renderStats() {
   const checked = Object.values(state.checked).filter(Boolean).length;
   const missed = Object.values(state.missed || {}).filter(Boolean).length;
@@ -856,7 +875,7 @@ function renderItinerary() {
   const host = $("#route-list");
   if (!host) return;
   const requested = getParam("day");
-  const activeId = routes.some((route) => route.id === requested) ? requested : routes[0].id;
+  const activeId = routes.some((route) => route.id === requested) ? requested : todayRouteId();
   const bar = $("#date-bar");
   if (bar) {
     bar.innerHTML = routes.map((route) => `
