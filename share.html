@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>分享 · MDW 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="share">
+  <header class="app-header">
+    <a class="brand" href="index.html"><span class="brand-mark">MDW<br>26</span><span><span class="eyebrow">Personal companion</span><strong>Furniture / Product Memory System</strong></span></a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="itinerary.html">行程</a><a href="program.html">Program</a><a href="reflections.html">记录</a><a href="photos.html">照片</a><a href="share.html">分享</a><a href="data.html">数据</a>
+    </nav>
+  </header>
+  <main>
+    <section class="band share-band">
+      <div class="section-title"><p class="eyebrow">For friends</p><h1>和朋友分享</h1></div>
+      <div class="share-layout">
+        <div class="share-card">
+          <h2>我的 MDW 2026 小路线</h2>
+          <p id="share-summary">还没有打卡记录。逛完几个展之后，这里会自动变成可分享摘要。</p>
+          <div class="share-actions">
+            <button class="command primary" type="button" data-action="copy-share">复制分享文字</button>
+            <button class="command" type="button" data-action="download-json">导出记录</button>
+            <label class="command import-command">导入记录<input id="import-json" type="file" accept="application/json"></label>
+          </div>
+          <p class="storage-note">记录和照片现在存放在当前浏览器的本地储存里。同一个网址、同一个设备、同一个浏览器再次打开会保留；换手机或换浏览器不会自动同步。</p>
+        </div>
+        <div class="poster-strip" aria-label="每日海报预览">
+          <img src="assets/mdw_2026_poster_sat16.svg" alt="5月16日行程海报">
+          <img src="assets/mdw_2026_poster_sun17.svg" alt="5月17日行程海报">
+          <img src="assets/mdw_2026_poster_sat23.svg" alt="5月23日行程海报">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

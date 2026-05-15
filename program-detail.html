@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program 详情 · MDW 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="program-detail">
+  <header class="app-header">
+    <a class="brand" href="index.html"><span class="brand-mark">MDW<br>26</span><span><span class="eyebrow">Personal companion</span><strong>Furniture / Product Memory System</strong></span></a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="itinerary.html">行程</a><a href="program.html">Program</a><a href="reflections.html">记录</a><a href="photos.html">照片</a><a href="share.html">分享</a><a href="data.html">数据</a>
+    </nav>
+  </header>
+  <main>
+    <article class="detail-card">
+      <div class="detail-hero">
+        <div id="related-links" class="inline-links"></div>
+        <span id="detail-type" class="pill"></span>
+        <h1 id="detail-name"></h1>
+        <p id="detail-address"></p>
+        <p id="detail-why"></p>
+        <div class="detail-actions">
+          <button id="detail-check" class="command primary" type="button">打卡</button>
+          <button id="detail-missed" class="command" type="button">标记错过</button>
+          <a id="detail-official" class="command" href="https://designweek.melbourne/program/" target="_blank" rel="noopener">MDW 官方页面</a>
+        </div>
+      </div>
+      <div class="detail-tools">
+        <div class="thoughts-panel">
+          <div class="thoughts-bar">
+            <button class="command primary" type="button" data-action="new-thoughts">new thoughts</button>
+          </div>
+          <form id="detail-reflection-form" class="mini-form thoughts-form" hidden>
+          <h2>Reflection</h2>
+          <input id="detail-edit-id" type="hidden">
+          <label><span>一句话记忆</span><input id="detail-memory" type="text" placeholder="我最想记住的是..."></label>
+          <label><span>材料 / 细节</span><input id="detail-material" type="text" placeholder="表面、结构、颜色、工艺"></label>
+          <label><span>我的想法</span><textarea id="detail-note" rows="4" placeholder="喜欢 / 不喜欢 / 想带回生活里的点"></textarea></label>
+            <div class="form-actions">
+              <button id="detail-save-thought" class="command primary" type="submit">保存这条记录</button>
+              <button class="command" type="button" data-action="cancel-thoughts">取消</button>
+            </div>
+          </form>
+        </div>
+        <div class="mini-form">
+          <h2>照片</h2>
+          <label class="drop-zone compact">
+            <input id="detail-photo-input" type="file" accept="image/*" multiple>
+            <strong>选择照片</strong>
+            <span>会自动压缩后存到此浏览器本地。</span>
+          </label>
+        </div>
+      </div>
+      <div class="detail-archive">
+        <div><h2>这个展的记录</h2><div id="detail-reflections" class="reflection-list"></div></div>
+        <div><h2>这个展的照片</h2><div id="detail-photos" class="photo-grid compact-grid"></div></div>
+      </div>
+    </article>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

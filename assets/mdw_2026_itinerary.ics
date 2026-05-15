@@ -1,0 +1,377 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Codex//MDW 2026 Updated Flapper Itinerary//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MDW 2026 updated itinerary
+X-WR-TIMEZONE:Australia/Melbourne
+BEGIN:VTIMEZONE
+TZID:Australia/Melbourne
+BEGIN:STANDARD
+DTSTART:20260405T030000
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:flapper-said-exploring-the-future-of-conversational-ai-f9bc2c9d@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260514T183000
+DTEND;TZID=Australia/Melbourne:20260514T191500
+SUMMARY:MDW 2026: Flapper Said: Exploring the Future of Conversational AI
+LOCATION:Deakin University Library\, 221 Burwood Highway\, Burwood VIC 3125
+DESCRIPTION:P2 · Added program · Added from your extra link\; open 8am–9pm through MDW. Listed like other events\, not marked as visited. · Source: https://designweek.melbourne/event/flapper-said-exploring-the-future-of-conversational-ai/
+END:VEVENT
+BEGIN:VEVENT
+UID:sensual-living-systems-96c14e80@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260515T174000
+DTEND;TZID=Australia/Melbourne:20260515T181000
+SUMMARY:MDW 2026: Sensual Living Systems™
+LOCATION:Ma House Supply Store\, 54 Johnston St\, Collingwood VIC 3066
+DESCRIPTION:P2 · Optional rescue · Opening evening if you can leave on time\; strong domestic object language. · Source: https://designweek.melbourne/event/sensual-living-systems/
+END:VEVENT
+BEGIN:VEVENT
+UID:new-relic-fixtures-040a9067@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260515T181500
+DTEND;TZID=Australia/Melbourne:20260515T184500
+SUMMARY:MDW 2026: New/Relic: Fixtures
+LOCATION:Le Space\, 1 Mater St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Planned / backup · Can also move to Sat 16 or Sat 23. Great fit for object/product language. · Source: https://designweek.melbourne/event/new-relic-fixtures/
+END:VEVENT
+BEGIN:VEVENT
+UID:hand-of-the-maker-robert-gordon-x-hothaus-glass-studio-c5dd4737@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260515T185000
+DTEND;TZID=Australia/Melbourne:20260515T193000
+SUMMARY:MDW 2026: Hand of the Maker: Robert Gordon x HotHaus Glass Studio
+LOCATION:The Design Files Gallery\, 14 Little Oxford St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Optional rescue · See it now if evening access works to reduce Saturday pressure. · Source: https://designweek.melbourne/event/hand-of-the-maker-robert-gordon-x-hothaus-glass-studio/
+END:VEVENT
+BEGIN:VEVENT
+UID:ross-gardam-open-studio-36e6f9dd@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T110000
+DTEND;TZID=Australia/Melbourne:20260516T114000
+SUMMARY:MDW 2026: Ross Gardam: Open Studio
+LOCATION:Ross Gardam Studio\, 102 Albert St\, Brunswick East VIC 3057
+DESCRIPTION:P1 · Must attend · Must-see and likely early close. Start here. · Source: https://designweek.melbourne/event/ross-gardam-open-studio/
+END:VEVENT
+BEGIN:VEVENT
+UID:table-manners-01f79286@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T115500
+DTEND;TZID=Australia/Melbourne:20260516T123000
+SUMMARY:MDW 2026: Table Manners
+LOCATION:Florian Home\, 617 Rathdowne St\, Carlton North VIC 3054
+DESCRIPTION:P1 · Must attend · Very relevant to small product / lifestyle object direction. · Source: https://designweek.melbourne/event/table-manners/
+END:VEVENT
+BEGIN:VEVENT
+UID:troy-backhouse-open-studio-between-idea-and-object-bda14374@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T124500
+DTEND;TZID=Australia/Melbourne:20260516T131000
+SUMMARY:MDW 2026: Troy Backhouse: Open Studio – Between Idea and Object
+LOCATION:Troy Backhouse Studio\, 12/95 Victoria St\, Fitzroy VIC 3065
+DESCRIPTION:P2 · Planned · Good for understanding process from idea to object. · Source: https://designweek.melbourne/event/troy-backhouse-open-studio-between-idea-and-object/
+END:VEVENT
+BEGIN:VEVENT
+UID:adam-cornish-domestic-experiments-633fe405@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T132000
+DTEND;TZID=Australia/Melbourne:20260516T134500
+SUMMARY:MDW 2026: Adam Cornish: Domestic Experiments
+LOCATION:Oigåll Projects\, 122 Gertrude St\, Fitzroy VIC 3065
+DESCRIPTION:P1 · Must attend · Strong furniture/product fit. Keep if possible. · Source: https://designweek.melbourne/event/adam-cornish-domestic-experiments/
+END:VEVENT
+BEGIN:VEVENT
+UID:lustre-aae7f9b5@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T135000
+DTEND;TZID=Australia/Melbourne:20260516T140000
+SUMMARY:MDW 2026: LUSTRE
+LOCATION:Tait Melbourne\, 209/211 Smith St\, Fitzroy VIC 3065
+DESCRIPTION:P2 · Planned quick scan · Very quick scan before the fixed talk\; stainless/metal adjacent inspiration. · Source: https://designweek.melbourne/event/lustre/
+END:VEVENT
+BEGIN:VEVENT
+UID:transformative-repair-talk-97d84260@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T140000
+DTEND;TZID=Australia/Melbourne:20260516T150000
+SUMMARY:MDW 2026: Transformative Repair Talk
+LOCATION:BAR Cantina\, level 1\, 47 Easey St\, Collingwood VIC 3066
+DESCRIPTION:P2 · Must attend if available · Fixed-time talk. Added to main because you do not want to give it up. · Source: https://designweek.melbourne/event/transformative-repair-talk/
+END:VEVENT
+BEGIN:VEVENT
+UID:hand-of-the-maker-robert-gordon-x-hothaus-glass-studio-a415e4de@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T151000
+DTEND;TZID=Australia/Melbourne:20260516T153500
+SUMMARY:MDW 2026: Hand of the Maker: Robert Gordon x HotHaus Glass Studio
+LOCATION:The Design Files Gallery\, 14 Little Oxford St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Must attend · Core material/making visit if not done Friday. · Source: https://designweek.melbourne/event/hand-of-the-maker-robert-gordon-x-hothaus-glass-studio/
+END:VEVENT
+BEGIN:VEVENT
+UID:still-form-ebabbf20@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T154000
+DTEND;TZID=Australia/Melbourne:20260516T160500
+SUMMARY:MDW 2026: Still Form
+LOCATION:Sabu Studio\, 6–8 Down St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Must attend · Very wanted and early close. Prioritise. · Source: https://designweek.melbourne/event/still-form/
+END:VEVENT
+BEGIN:VEVENT
+UID:new-relic-fixtures-0ae3900e@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260516T161000
+DTEND;TZID=Australia/Melbourne:20260516T163500
+SUMMARY:MDW 2026: New/Relic: Fixtures
+LOCATION:Le Space\, 1 Mater St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Must attend / backup · Very wanted\; if Saturday too tight\, move to Sat 23. · Source: https://designweek.melbourne/event/new-relic-fixtures/
+END:VEVENT
+BEGIN:VEVENT
+UID:cant-see-this-youre-dead-or-not-here-ben-mazey-b8de1ab5@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T105000
+DTEND;TZID=Australia/Melbourne:20260517T112500
+SUMMARY:MDW 2026: Can’t see this? You’re dead or not here. Ben Mazey
+LOCATION:C. Gallery\, 50 Davis Ave\, South Yarra VIC 3141
+DESCRIPTION:P2 · Planned · Start close to South Melbourne/South Yarra side. · Source: https://designweek.melbourne/event/cant-see-this-youre-dead-or-not-here-ben-mazey/
+END:VEVENT
+BEGIN:VEVENT
+UID:modular-studies-at-home-694b6e55@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T114000
+DTEND;TZID=Australia/Melbourne:20260517T121000
+SUMMARY:MDW 2026: Modular Studies: At Home
+LOCATION:Elliott Jones Studio\, 2C Percy St\, Prahran VIC 3181
+DESCRIPTION:P3 · Optional · Only attend if time/energy\; not core. · Source: https://designweek.melbourne/event/modular-studies-at-home/
+END:VEVENT
+BEGIN:VEVENT
+UID:long-distance-call-sculptural-furniture-and-lighting-4ddcd435@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T122500
+DTEND;TZID=Australia/Melbourne:20260517T131500
+SUMMARY:MDW 2026: Long Distance Call: Sculptural Furniture and Lighting
+LOCATION:Storehouse / Stoneface Co.\, 1–3 Inkerman St\, St Kilda VIC 3182
+DESCRIPTION:P2 · Planned · Good fit and worth a slower look. · Source: https://designweek.melbourne/event/long-distance-call-sculptural-furniture-and-lighting/
+END:VEVENT
+BEGIN:VEVENT
+UID:100-chairs-87a18921@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T140000
+DTEND;TZID=Australia/Melbourne:20260517T144500
+SUMMARY:MDW 2026: 100 CHAIRS
+LOCATION:South Magdalen Laundry\, Abbotsford Convent\, 1 St Heliers St\, Abbotsford VIC 3067
+DESCRIPTION:P2 · Planned · Big furniture information density\; near office. · Source: https://designweek.melbourne/event/100-chairs/
+END:VEVENT
+BEGIN:VEVENT
+UID:arum-ba4e4881@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T144500
+DTEND;TZID=Australia/Melbourne:20260517T152000
+SUMMARY:MDW 2026: Arum
+LOCATION:Abbotsford Convent\, 1 St Heliers St\, Abbotsford VIC 3067
+DESCRIPTION:P1 · Planned · Very relevant\; also open later if missed. · Source: https://designweek.melbourne/event/arum/
+END:VEVENT
+BEGIN:VEVENT
+UID:second-nature-058e8bd3@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T152500
+DTEND;TZID=Australia/Melbourne:20260517T155000
+SUMMARY:MDW 2026: Second Nature
+LOCATION:Curve Design\, 307 Victoria St\, Abbotsford VIC 3067
+DESCRIPTION:P3 · Optional quick scan · Nearby\; quick scan only. · Source: https://designweek.melbourne/event/second-nature/
+END:VEVENT
+BEGIN:VEVENT
+UID:twenty-years-the-making-of-a-symbol-4275a14c@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260517T160000
+DTEND;TZID=Australia/Melbourne:20260517T163000
+SUMMARY:MDW 2026: Twenty Years: The Making of a Symbol
+LOCATION:Lightly / CY Space\, Collingwood Yards\, Johnston St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Planned · Very wanted\; if missed\, move to Sat 23. · Source: https://designweek.melbourne/event/twenty-years-the-making-of-a-symbol/
+END:VEVENT
+BEGIN:VEVENT
+UID:a-decade-of-menus-f581da70@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260518T121500
+DTEND;TZID=Australia/Melbourne:20260518T125500
+SUMMARY:MDW 2026: A Decade of Menus
+LOCATION:Mitty's News Agency (Level 1)\, 1/53 Bourke St\, Melbourne VIC 3000
+DESCRIPTION:P2 · Last chance · Added to main. Last day is Mon 18\, so treat as lunch/early-leave rescue. · Source: https://designweek.melbourne/event/a-decade-of-menus/
+END:VEVENT
+BEGIN:VEVENT
+UID:still-form-fe094042@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260518T121500
+DTEND;TZID=Australia/Melbourne:20260518T125500
+SUMMARY:MDW 2026: Still Form
+LOCATION:Sabu Studio\, 6–8 Down St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Backup / last chance · Only use this if missed on Sat. Conflicts with A Decade rescue\, so choose based on priority. · Source: https://designweek.melbourne/event/still-form/
+END:VEVENT
+BEGIN:VEVENT
+UID:arum-b67f311e@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260518T173000
+DTEND;TZID=Australia/Melbourne:20260518T180000
+SUMMARY:MDW 2026: Arum
+LOCATION:Abbotsford Convent\, 1 St Heliers St\, Abbotsford VIC 3067
+DESCRIPTION:P1 · Backup · Easy after work if Sunday missed. · Source: https://designweek.melbourne/event/arum/
+END:VEVENT
+BEGIN:VEVENT
+UID:reframed-c3da8af6@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260519T160000
+DTEND;TZID=Australia/Melbourne:20260519T163500
+SUMMARY:MDW 2026: ReFramed
+LOCATION:MOBILIA\, 510 Church St\, Cremorne VIC 3121
+DESCRIPTION:P2 · Planned if early leave · Needs early leave because showroom closes around 5pm. · Source: https://designweek.melbourne/event/reframed/
+END:VEVENT
+BEGIN:VEVENT
+UID:pas-de-deux-step-of-two-b5d13097@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260519T164500
+DTEND;TZID=Australia/Melbourne:20260519T171000
+SUMMARY:MDW 2026: Pas de deux (Step of Two)
+LOCATION:Lennox St. Gallery & ESCULTURA\, 322–324 Lennox St\, Richmond VIC 3121
+DESCRIPTION:P3 · Optional · Nearby after ReFramed. · Source: https://designweek.melbourne/event/pas-de-deux-step-of-two/
+END:VEVENT
+BEGIN:VEVENT
+UID:between-times-59fe7961@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260519T173000
+DTEND;TZID=Australia/Melbourne:20260519T175500
+SUMMARY:MDW 2026: Between Times
+LOCATION:APATO\, 6 Gipps St\, Collingwood VIC 3066
+DESCRIPTION:P2 · Planned · Good weekday after-work target near office. · Source: https://designweek.melbourne/event/between-times/
+END:VEVENT
+BEGIN:VEVENT
+UID:work-shop-on-permanence-in-contemporary-practice-f1652fda@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260520T121500
+DTEND;TZID=Australia/Melbourne:20260520T125500
+SUMMARY:MDW 2026: Work Shop: On Permanence in Contemporary Practice
+LOCATION:Fiona Lynch Office\, 75 Langridge St\, Collingwood VIC 3066
+DESCRIPTION:P2 · Flexible · Good for material/practice thinking\; lunch break if necessary. · Source: https://designweek.melbourne/event/work-shop-on-permanence-in-contemporary-practice/
+END:VEVENT
+BEGIN:VEVENT
+UID:apart-applied-arts-then-and-now-6785e340@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260521T182000
+DTEND;TZID=Australia/Melbourne:20260521T192000
+SUMMARY:MDW 2026: APART: Applied Arts\, Then And Now
+LOCATION:Lost Profile Gallery\, 42 Hope St\, Brunswick VIC 3056
+DESCRIPTION:P2 · Planned · Good evening visit\; strong object/applied arts fit. · Source: https://designweek.melbourne/event/apart-applied-arts-then-and-now/
+END:VEVENT
+BEGIN:VEVENT
+UID:australian-furniture-design-award-2026-living-well-living-small-a74cfabc@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260522T121500
+DTEND;TZID=Australia/Melbourne:20260522T125500
+SUMMARY:MDW 2026: Australian Furniture Design Award 2026 – Living Well Living Small
+LOCATION:Stylecraft\, Ground Floor\, 379 Collins St\, Melbourne VIC 3000
+DESCRIPTION:P2 · Planned if schedule allows · Best done by Fri 22. Lunch break if possible. · Source: https://designweek.melbourne/event/australian-furniture-design-award-2026-living-well-living-small/
+END:VEVENT
+BEGIN:VEVENT
+UID:youve-got-mail-867ba1e6@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260522T173000
+DTEND;TZID=Australia/Melbourne:20260522T175500
+SUMMARY:MDW 2026: You’ve Got Mail!
+LOCATION:above Mitty’s Newsagency\, 1/53 Bourke St\, Melbourne VIC 3000
+DESCRIPTION:P2 · Planned / backup weekend · You specifically want this\; also open weekend. · Source: https://designweek.melbourne/event/youve-got-mail/
+END:VEVENT
+BEGIN:VEVENT
+UID:house-9dacef68@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T120000
+DTEND;TZID=Australia/Melbourne:20260523T123500
+SUMMARY:MDW 2026: HOUSE
+LOCATION:Animal House Fine Arts\, 5 Florence St\, Brunswick VIC 3056
+DESCRIPTION:P2 · Planned · Added to main. Brunswick stop before the Collingwood/CBD backup run. · Source: https://designweek.melbourne/event/house/
+END:VEVENT
+BEGIN:VEVENT
+UID:work-shop-on-permanence-in-contemporary-practice-169d4cf6@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T125500
+DTEND;TZID=Australia/Melbourne:20260523T132500
+SUMMARY:MDW 2026: Work Shop: On Permanence in Contemporary Practice
+LOCATION:Fiona Lynch Office\, 75 Langridge St\, Collingwood VIC 3066
+DESCRIPTION:P2 · Backup · Backup if missed weekdays. · Source: https://designweek.melbourne/event/work-shop-on-permanence-in-contemporary-practice/
+END:VEVENT
+BEGIN:VEVENT
+UID:twenty-years-the-making-of-a-symbol-e858e67e@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T133000
+DTEND;TZID=Australia/Melbourne:20260523T140000
+SUMMARY:MDW 2026: Twenty Years: The Making of a Symbol
+LOCATION:Lightly / CY Space\, Collingwood Yards\, Johnston St\, Collingwood VIC 3066
+DESCRIPTION:P1 · Backup · Backup if missed on Sunday. · Source: https://designweek.melbourne/event/twenty-years-the-making-of-a-symbol/
+END:VEVENT
+BEGIN:VEVENT
+UID:post-industrial-bliss-f5aa80b5@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T140500
+DTEND;TZID=Australia/Melbourne:20260523T143000
+SUMMARY:MDW 2026: Post Industrial Bliss
+LOCATION:Seekers\, 203 Gertrude St\, Fitzroy VIC 3065
+DESCRIPTION:P3 · Optional quick scan · Re-added as backup quick scan if missed Sat 16. · Source: https://designweek.melbourne/event/post-industrial-bliss/
+END:VEVENT
+BEGIN:VEVENT
+UID:youve-got-mail-ca8a5955@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T145000
+DTEND;TZID=Australia/Melbourne:20260523T153000
+SUMMARY:MDW 2026: You’ve Got Mail!
+LOCATION:above Mitty’s Newsagency\, 1/53 Bourke St\, Melbourne VIC 3000
+DESCRIPTION:P2 · Backup · Backup if missed Friday. · Source: https://designweek.melbourne/event/youve-got-mail/
+END:VEVENT
+BEGIN:VEVENT
+UID:la-grande-f-te-the-grand-feast-e7103d91@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260523T153500
+DTEND;TZID=Australia/Melbourne:20260523T161000
+SUMMARY:MDW 2026: La Grande Fête (The Grand Feast)
+LOCATION:Pieces of Eight Gallery\, 28 Russell Pl\, Melbourne VIC 3000
+DESCRIPTION:P1 · Must attend if not seen earlier · Very wanted\; last day Sat 23. · Source: https://designweek.melbourne/event/la-grande-fete-the-grand-feast/
+END:VEVENT
+BEGIN:VEVENT
+UID:youve-got-mail-bd74b19b@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260524T110000
+DTEND;TZID=Australia/Melbourne:20260524T114500
+SUMMARY:MDW 2026: You’ve Got Mail!
+LOCATION:above Mitty’s Newsagency\, 1/53 Bourke St\, Melbourne VIC 3000
+DESCRIPTION:P2 · Final backup · Final fallback day. · Source: https://designweek.melbourne/event/youve-got-mail/
+END:VEVENT
+BEGIN:VEVENT
+UID:age-of-algae-seaweed-systems-and-regenerative-futures-4f5bea55@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260524T120000
+DTEND;TZID=Australia/Melbourne:20260524T124500
+SUMMARY:MDW 2026: Age of Algae: Seaweed\, Systems and Regenerative Futures
+LOCATION:MPavilion\, Queen Victoria Gardens\, Melbourne VIC 3004
+DESCRIPTION:P3 · Optional final day · Interesting material/systems topic\, but not core furniture/product. · Source: https://designweek.melbourne/event/age-of-algae-seaweed-systems-and-regenerative-futures/
+END:VEVENT
+BEGIN:VEVENT
+UID:long-distance-call-sculptural-furniture-and-lighting-11566c0d@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260524T131500
+DTEND;TZID=Australia/Melbourne:20260524T140000
+SUMMARY:MDW 2026: Long Distance Call: Sculptural Furniture and Lighting
+LOCATION:Storehouse / Stoneface Co.\, 1–3 Inkerman St\, St Kilda VIC 3182
+DESCRIPTION:P2 · Final backup · Final fallback if missed Sun 17. · Source: https://designweek.melbourne/event/long-distance-call-sculptural-furniture-and-lighting/
+END:VEVENT
+BEGIN:VEVENT
+UID:arum-9df7b17c@codex
+DTSTAMP:20260515T010000Z
+DTSTART;TZID=Australia/Melbourne:20260524T143000
+DTEND;TZID=Australia/Melbourne:20260524T151500
+SUMMARY:MDW 2026: Arum
+LOCATION:Abbotsford Convent\, 1 St Heliers St\, Abbotsford VIC 3067
+DESCRIPTION:P1 · Final backup · Final fallback if missed. · Source: https://designweek.melbourne/event/arum/
+END:VEVENT
+END:VCALENDAR

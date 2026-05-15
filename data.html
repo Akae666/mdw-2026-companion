@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数据同步 · MDW 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="data">
+  <header class="app-header">
+    <a class="brand" href="index.html"><span class="brand-mark">MDW<br>26</span><span><span class="eyebrow">Personal companion</span><strong>Furniture / Product Memory System</strong></span></a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="itinerary.html">行程</a><a href="program.html">Program</a><a href="reflections.html">记录</a><a href="photos.html">照片</a><a href="share.html">分享</a><a href="data.html">数据</a>
+    </nav>
+  </header>
+  <main>
+    <section class="band">
+      <div class="section-title"><p class="eyebrow">Data / Sync</p><h1>数据同步</h1></div>
+      <div class="data-hero">
+        <div>
+          <h2>这台设备里的记录</h2>
+          <p>这个网站现在把打卡、错过、reflection 和照片存在当前设备的当前浏览器里。换设备前先导出，在新设备上再导入。</p>
+        </div>
+        <div class="data-stats">
+          <div><span id="stat-checked">0</span><small>已打卡</small></div>
+          <div><span id="stat-missed">0</span><small>错过</small></div>
+          <div><span id="stat-reflections">0</span><small>记录</small></div>
+          <div><span id="stat-photos">0</span><small>照片</small></div>
+        </div>
+      </div>
+      <div class="data-actions">
+        <button class="command primary" type="button" data-action="download-json">一键导出记录包</button>
+        <label class="command import-command">一键导入记录包<input id="import-json" type="file" accept="application/json"></label>
+      </div>
+    </section>
+
+    <section class="page-link-grid" aria-label="同步步骤">
+      <div class="sync-step"><strong>1. 电脑导出</strong><span>在电脑打开这个页面，点“一键导出记录包”。</span></div>
+      <div class="sync-step"><strong>2. 发到手机</strong><span>用 AirDrop、iCloud Drive、微信文件或邮件把 JSON 发到手机。</span></div>
+      <div class="sync-step"><strong>3. 手机导入</strong><span>手机打开线上网页，点“一键导入记录包”。</span></div>
+      <div class="sync-step"><strong>4. 最终打包</strong><span>看完展后，在手机上再导出一次，就是最终 memory pack。</span></div>
+    </section>
+
+    <section class="band">
+      <div class="section-title"><p class="eyebrow">Safety note</p><h2>本地储存说明</h2></div>
+      <p class="storage-note">GitHub Pages 只负责发布网页，不会自动同步你的私人记录。导出 JSON 里会包含压缩后的照片，所以最终文件可能会随着照片数量变大。</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDW 2026 Personal Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="index">
+  <header class="app-header">
+    <a class="brand" href="index.html" aria-label="回到首页">
+      <span class="brand-mark">MDW<br>26</span>
+      <span><span class="eyebrow">Personal companion</span><strong>Furniture / Product Memory System</strong></span>
+    </a>
+    <nav class="top-nav" aria-label="主导航">
+      <a href="itinerary.html">行程</a>
+      <a href="program.html">Program</a>
+      <a href="reflections.html">记录</a>
+      <a href="photos.html">照片</a>
+      <a href="share.html">分享</a><a href="data.html">数据</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-grid" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Design the world you want</p>
+        <h1 id="hero-title">你的 MDW 2026 看展系统</h1>
+        <p>每个功能现在都是独立页面：先看路线，点进某个 program，再在它自己的页面里打卡、写 reflection、上传照片。</p>
+        <div class="hero-actions">
+          <a class="command primary" href="itinerary.html">打开行程</a>
+          <a class="command" href="program.html">看 Program</a>
+          <button class="icon-command" type="button" data-action="reset-demo" title="清空本地记录" aria-label="清空本地记录">↺</button>
+        </div>
+      </div>
+      <div class="status-board" aria-label="当前进度">
+        <div><span id="stat-checked">0</span><small>已打卡</small></div>
+        <div><span id="stat-missed">0</span><small>错过</small></div>
+        <div><span id="stat-reflections">0</span><small>条记录</small></div>
+        <div><span id="stat-photos">0</span><small>张照片</small></div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="next-title">
+      <div class="section-title">
+        <p class="eyebrow">Next action</p>
+        <h2 id="next-title">下一个入口</h2>
+      </div>
+      <div id="next-stop-panel" class="next-stop-panel active"></div>
+    </section>
+
+    <section class="page-link-grid" aria-label="网站页面">
+      <a href="itinerary.html"><strong>行程清单</strong><span>按日期和地理 cluster 查看，每个 stop 都能点进详情。</span></a>
+      <a href="program.html"><strong>Program 打卡</strong><span>搜索、筛重点、打开单个 program。</span></a>
+      <a href="reflections.html"><strong>Reflection 档案</strong><span>集中查看所有记录，也能回到对应 program。</span></a>
+      <a href="photos.html"><strong>照片库</strong><span>按 program 归档现场照片。</span></a>
+      <a href="share.html"><strong>朋友分享</strong><span>复制摘要、导出或导入记录。</span></a>
+      <a href="data.html"><strong>数据同步</strong><span>一键导出、导入，电脑和手机之间迁移记录。</span></a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
