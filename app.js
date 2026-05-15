@@ -1169,23 +1169,35 @@ function closeThoughtForm() {
   form.hidden = true;
 }
 
+function compressImageSource(src, maxSide = 960, quality = 0.58) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onerror = reject;
+    image.onload = () => {
+      const scale = Math.min(1, maxSide / Math.max(image.width, image.height));
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.round(image.width * scale);
+      canvas.height = Math.round(image.height * scale);
+      const context = canvas.getContext("2d");
+      context.fillStyle = "#f8f2e6";
+      context.fillRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
+      resolve(canvas.toDataURL("image/jpeg", quality));
+    };
+    image.src = src;
+  });
+}
+
 function resizeImage(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onerror = reject;
-    reader.onload = () => {
-      const image = new Image();
-      image.onerror = reject;
-      image.onload = () => {
-        const maxSide = 1600;
-        const scale = Math.min(1, maxSide / Math.max(image.width, image.height));
-        const canvas = document.createElement("canvas");
-        canvas.width = Math.round(image.width * scale);
-        canvas.height = Math.round(image.height * scale);
-        canvas.getContext("2d").drawImage(image, 0, 0, canvas.width, canvas.height);
-        resolve(canvas.toDataURL("image/jpeg", 0.82));
-      };
-      image.src = reader.result;
+    reader.onload = async () => {
+      try {
+        resolve(await compressImageSource(reader.result));
+      } catch (error) {
+        reject(error);
+      }
     };
     reader.readAsDataURL(file);
   });
@@ -1193,19 +1205,50 @@ function resizeImage(file) {
 
 async function addPhotos(files, eventId) {
   for (const file of [...files]) {
+    const before = [...state.photos];
     try {
-      state.photos.push({
+      const photo = {
         id: crypto.randomUUID(),
         eventId,
         name: file.name,
         dataUrl: await resizeImage(file),
         createdAt: new Date().toISOString()
-      });
+      };
+      state.photos.push(photo);
       saveState();
       if (pageName() === "program-detail") renderDetail();
       if (pageName() === "photos") renderPhotoArchive();
     } catch {
-      alert(`这张照片暂时存不了：${file.name}`);
+      state.photos = before;
+      alert(`这张照片暂时存不了：${file.name}\n\n手机浏览器的照片储存空间可能满了。先到“数据”页导出一次记录包备份，删除几张不重要的照片，或更新到新版压缩后再试。`);
+    }
+  }
+}
+
+async function compactStoredPhotos() {
+  const largePhotos = state.photos.filter((photo) => (photo.dataUrl || "").length > 180000);
+  if (!largePhotos.length || sessionStorage.getItem("mdw2026-photo-compact-done")) return;
+  sessionStorage.setItem("mdw2026-photo-compact-done", "true");
+  let changed = false;
+  for (const photo of largePhotos) {
+    try {
+      const compact = await compressImageSource(photo.dataUrl, 900, 0.52);
+      if (compact.length < photo.dataUrl.length) {
+        photo.dataUrl = compact;
+        changed = true;
+      }
+    } catch {
+      // Keep the original photo if Safari cannot redraw this image.
+    }
+  }
+  if (changed) {
+    try {
+      saveState();
+      if (pageName() === "program-detail") renderDetail();
+      if (pageName() === "photos") renderPhotoArchive();
+      renderStats();
+    } catch {
+      alert("照片自动瘦身失败。请先在“数据”页导出记录包备份，再删除几张照片释放空间。");
     }
   }
 }
@@ -1336,6 +1379,7 @@ function init() {
   if (pageName() === "photos") renderPhotoArchive();
   if (pageName() === "share") renderShare();
   if (pageName() === "data") renderShare();
+  compactStoredPhotos();
 }
 
 bindSharedEvents();
