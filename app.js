@@ -914,6 +914,7 @@ function renderProgramList() {
   if (!list) return;
   const query = ($("#program-search")?.value || "").trim().toLowerCase();
   const filter = document.querySelector(".segmented button.active")?.dataset.filter || "all";
+  renderMissedSection();
   const filtered = programs.filter((item) => {
     const checked = Boolean(state.checked[item[0]]);
     const missed = Boolean(state.missed?.[item[0]]);
@@ -930,14 +931,15 @@ function renderProgramList() {
       <div class="check-cell">
         <button class="check-button" type="button" data-check="${item[0]}" aria-label="切换打卡状态"></button>
       </div>
-      <a class="program-copy" href="${detailUrl(item[0])}">
+      <div class="program-copy">
         <div class="card-line">
-          <h3>${item[1]}</h3>
+          <h3><a href="${detailUrl(item[0])}">${item[1]}</a></h3>
           <span class="pill">${state.missed?.[item[0]] ? "错过" : item[4]}</span>
         </div>
         <p class="meta">${item[2]} · ${item[3]}</p>
         <p class="why">${item[6]} · ${item[7]} · ${item[5]}</p>
-      </a>
+        ${programRouteOptions(item[0])}
+      </div>
       <div class="card-actions">
         <button class="icon-command" type="button" data-missed="${item[0]}" title="标记错过" aria-label="标记错过">−</button>
         <a class="icon-command" href="${detailUrl(item[0])}" title="打开详情" aria-label="打开详情">→</a>
@@ -946,17 +948,62 @@ function renderProgramList() {
   `).join("") : `<div class="empty-state">没有匹配的项目。</div>`;
 }
 
+function programRouteOptions(programId) {
+  const options = routes.flatMap((route) =>
+    route.stops
+      .filter((stop) => stop[5] === programId)
+      .map((stop) => ({ route, stop }))
+  );
+  if (!options.length) return `<div class="route-options muted-option">未排进行程</div>`;
+  return `
+    <div class="route-options" aria-label="已排入的日期">
+      <span>排在</span>
+      ${options.map(({ route, stop }) => `
+        <a href="itinerary.html?day=${route.id}#${route.id}" title="${stop[0]} · ${route.title}">
+          ${route.label}<small>${stop[0]}</small>
+        </a>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderMissedSection() {
+  const host = $("#missed-section");
+  if (!host) return;
+  const missedItems = programs.filter((item) => state.missed?.[item[0]]);
+  host.innerHTML = missedItems.length ? `
+    <div class="status-section-head">
+      <p class="eyebrow">Missed / Skip</p>
+      <h2>错过 / 不去</h2>
+      <span>${missedItems.length} 个 program</span>
+    </div>
+    <div class="status-chip-list">
+      ${missedItems.map((item) => `
+        <a href="${detailUrl(item[0])}">
+          <strong>${item[1]}</strong>
+          <span>${item[2]}</span>
+        </a>
+      `).join("")}
+    </div>
+  ` : "";
+}
+
 function renderDetail() {
   const id = getParam("id") || programs[0][0];
   const item = programById(id) || programs[0];
+  const missed = Boolean(state.missed?.[item[0]]);
+  const checked = Boolean(state.checked[item[0]]);
+  const card = document.querySelector(".detail-card");
+  card?.classList.toggle("missed", missed);
+  card?.classList.toggle("done", checked);
   document.title = `${item[1]} · MDW 2026`;
-  $("#detail-type").textContent = item[4];
+  $("#detail-type").textContent = missed ? "错过 / 不去" : item[4];
   $("#detail-name").textContent = item[1];
   $("#detail-address").textContent = `${item[2]} · ${item[3]}`;
   $("#detail-why").textContent = `${item[6]} · ${item[7]} · ${item[5]}`;
-  $("#detail-check").textContent = state.checked[item[0]] ? "已打卡 ✓" : "打卡";
+  $("#detail-check").textContent = checked ? "已打卡 ✓" : "打卡";
   $("#detail-check").dataset.check = item[0];
-  $("#detail-missed").textContent = state.missed?.[item[0]] ? "已标记错过" : "标记错过";
+  $("#detail-missed").textContent = missed ? "恢复这个 program" : "错过 / 不去";
   $("#detail-missed").dataset.missed = item[0];
   $("#detail-official").href = item[9] || "https://designweek.melbourne/program/";
   $("#detail-reflection-form").dataset.programId = item[0];
@@ -969,7 +1016,7 @@ function renderDetail() {
 function renderRelatedLinks(id) {
   const host = $("#related-links");
   if (!host) return;
-  const relatedRoutes = routes.filter((route) => route.stops.some((stop) => stop[4] === id));
+  const relatedRoutes = routes.filter((route) => route.stops.some((stop) => stop[5] === id));
   host.innerHTML = `
     <a class="command" href="program.html">回 Program</a>
     <a class="command" href="itinerary.html">回行程</a>
@@ -1214,6 +1261,7 @@ function bindSharedEvents() {
       saveState();
       if (pageName() === "program") renderProgramList();
       if (pageName() === "program-detail") renderDetail();
+      if (pageName() === "itinerary") renderItinerary();
     }
 
     const deletePhoto = event.target.closest("[data-delete-photo]");
